@@ -1,12 +1,8 @@
-function ans = euler003(x)
-	a = uint64(2);
-	while x~=1
+function x= euler003(x)
+	a = 2;
+	while a*a<=x
 		if ~rem(x,a)
-			double(a);
 			x=x/a;
-		elseif a>sqrt(double(x))
-			double(x);
-			break;
 		else
 			a=a+1;
 		end
